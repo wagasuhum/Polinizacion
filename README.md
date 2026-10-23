@@ -28,12 +28,14 @@ El proyecto se estructura en cuatro componentes analíticos principales:
    - Mapas de presencia y idoneidad de hábitat a nivel nacional para especies clave de polinizadores (ej. especies del género *Eulaema*).
 
 ---
+## 📁 Estructura del Repositorio
 
-##  Estructura del Repositorio
-├── Capas/
-│   ├── Capas_Vectoriales/         # Archivos GeoJSON y Shapefiles (Agricultura Familiar, Limites)
-│   └── Capas_Raster/              # Coberturas e imágenes GeoTIFF (Hansen treecover2000, lossyear)
-├── bases/                         # Matrices taxonómicas y datos de interacción de la ICPA
-├── calculo_de_area/               # Scripts para el cálculo de coberturas y buffers de polinización
-├── codigos/                       # Scripts y notebooks de análisis (Python / R / GEE)
-└── README.md                      # Documentación principal del repositorio
+```text
+.
+├── Capas/                         # Archivos geográficos e insumos de entrada
+│   ├── Capas_Vectoriales/         # Geometrías GeoJSON y Shapefiles (Agricultura Familiar, Límites)
+│   └── Capas_Raster/              # Imágenes GeoTIFF (Hansen treecover2000, lossyear)
+├── bases/                         # Matrices de interacción planta-polinizador y datos taxonómicos (ICPA)
+├── calculo_de_area/               # Scripts de procesamiento espacial (cálculo de coberturas y buffers)
+├── codigos/                       # Notebooks y código fuente principal (Python, R, GEE)
+└── README.md                      # Documentación del proyecto
