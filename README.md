@@ -29,14 +29,11 @@ El proyecto se estructura en cuatro componentes analíticos principales:
 
 ---
 
-## 📁 Estructura del Repositorio
-
-```text
-├── data/
-│   ├── raw/                 # Matrices de interacción planta-polinizador
-│   └── processed/           # Datos morfológicos (ITD, peso, socialidad) y rangos
-├── models/
-│   ├── networks/            # Scripts de análisis de redes de interacción (R/Python)
-│   └── sdm/                 # Modelos de distribución geográfica de especies
-├── docs/                    # Presentaciones, referencias (ICPA, artículos)
-└── README.md
+##  Estructura del Repositorio
+├── Capas/
+│   ├── Capas_Vectoriales/         # Archivos GeoJSON y Shapefiles (Agricultura Familiar, Limites)
+│   └── Capas_Raster/              # Coberturas e imágenes GeoTIFF (Hansen treecover2000, lossyear)
+├── bases/                         # Matrices taxonómicas y datos de interacción de la ICPA
+├── calculo_de_area/               # Scripts para el cálculo de coberturas y buffers de polinización
+├── codigos/                       # Scripts y notebooks de análisis (Python / R / GEE)
+└── README.md                      # Documentación principal del repositorio
